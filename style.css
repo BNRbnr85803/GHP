@@ -1,0 +1,37 @@
+/* General Styling */
+body {
+  background: #0f172a;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Animated Typing Effect */
+.animated-name {
+  overflow: hidden;
+  border-right: .15em solid #00f7ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 2rem;
+  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00f7ff; }
+}
